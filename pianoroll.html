@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pianoroll</title>
+    <link id="sty" rel="stylesheet" href="/estilo.css" />
+  </head>
+  <body>
+    <header>
+      <div class="tipo">
+        <h1 class="titulo">Pianoroll</h1>
+        <nav class="nav">
+          <button class="pianoM" id="pianoM">Piano</button>
+          <button class="tecladoM" id="tecladoM">Teclado</button>
+          <button class="organoM" id="organoM">Organo</button>
+        </nav>
+      </div>
+    </header>
+    <div class="contenedor">
+      <div class="teclas" id="contenedor">
+        <audio id="Do" src="/audio/Do.wav"></audio>
+      </div>
+      <div class="teclas">
+        <audio id="Re">
+          <source type="audio/wav" src="/audio/Re.wav" />
+        </audio>
+      </div>
+      <div class="teclas">
+        <audio id="Mi">
+          <source type="audio/wav" src="/audio/Mi.wav" />
+        </audio>
+      </div>
+      <div class="teclas">
+        <audio id="Fa">
+          <source class="teclas" type="audio/wav" src="/audio/Fa.wav" />
+        </audio>
+      </div>
+      <div class="teclas">
+        <audio id="Sol">
+          <source type="audio/wav" src="/audio/Sol.wav" />
+        </audio>
+      </div>
+      <div class="teclas">
+        <audio id="Sol">
+          <source type="audio/wav" src="/audio/Sol.wav" />
+        </audio>
+      </div>
+      <div class="teclas">
+        <audio id="La">
+          <source type="audio/wav" src="/audio/La.wav" />
+        </audio>
+      </div>
+
+      <div class="teclas">
+        <audio id="Si">
+          <source type="audio/wav" src="/audio//Si.wav" />
+        </audio>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
