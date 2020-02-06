@@ -1,64 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Pianoroll</title>
-    <link id="sty" rel="stylesheet" href="/estilo.css" />
+    <link rel="stylesheet" href="estilo.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header>
-      <div class="tipo">
-        <h1 class="titulo">Pianoroll</h1>
-        <nav class="nav">
-          <button class="pianoM" id="pianoM">Piano</button>
-          <button class="tecladoM" id="tecladoM">Teclado</button>
-          <button class="organoM" id="organoM">Organo</button>
-        </nav>
-      </div>
-    </header>
-    <div class="contenedor">
-      <div class="teclas" id="contenedor">
-        <audio id="Do" src="/audio/Do.wav"></audio>
-      </div>
-      <div class="teclas">
-        <audio id="Re">
-          <source type="audio/wav" src="/audio/Re.wav" />
-        </audio>
-      </div>
-      <div class="teclas">
-        <audio id="Mi">
-          <source type="audio/wav" src="/audio/Mi.wav" />
-        </audio>
-      </div>
-      <div class="teclas">
-        <audio id="Fa">
-          <source class="teclas" type="audio/wav" src="/audio/Fa.wav" />
-        </audio>
-      </div>
-      <div class="teclas">
-        <audio id="Sol">
-          <source type="audio/wav" src="/audio/Sol.wav" />
-        </audio>
-      </div>
-      <div class="teclas">
-        <audio id="Sol">
-          <source type="audio/wav" src="/audio/Sol.wav" />
-        </audio>
-      </div>
-      <div class="teclas">
-        <audio id="La">
-          <source type="audio/wav" src="/audio/La.wav" />
-        </audio>
-      </div>
-
-      <div class="teclas">
-        <audio id="Si">
-          <source type="audio/wav" src="/audio//Si.wav" />
-        </audio>
-      </div>
-    </div>
-    <script src="./index.js"></script>
+    <ul class="set">
+      <li onclick="jsNota(174.61)" class="white b"></li>
+      <li onclick="jsNota(185)" class="black as"></li onclick="jsNota(100)">
+      <li onclick="jsNota(196)" class="white a"></li>
+      <li onclick="jsNota(207.65)" class="black gs"></li onclick="jsNota(100)">
+      <li onclick="jsNota(220)" class="white g"></li>
+      <li onclick="jsNota(233.08)" class="black fs"></li>
+      <li onclick="jsNota(246.94)" class="white f"></li>
+      <li onclick="jsNota(261.63)" class="white e"></li>
+      <li onclick="jsNota(277.18)" class="black ds"></li>
+      <li onclick="jsNota(293.66)" class="white d"></li>
+      <li onclick="jsNota(311.13)" class="black cs"></li>
+      <li onclick="jsNota(329.66)" class="white c"></li>
+    </ul>
+    <script src="/index.js"></script>
   </body>
 </html>
